@@ -83,10 +83,11 @@ We use the Google Cloud Datastore to manage our emulation data. This datastore h
 
 ##### Useful datastore commands
 These are commands that can be run to generate data. (Further explanation on what these can do can be found on the package.json file in the repository)
-| Command                                | Action |
+
+| Command                                     | Action  |
 | ------------------------------------------- | ------- |
-| `npm run start:datastore`               | Start emulator  |
-| `npm run generator`               | Insert data to datastore. This command runs a generator file that grabs json data from `server/emulator/data directory`  |
+| `npm run start:datastore`                   | Start emulator  |
+| `npm run generator`                         | Insert data to datastore. This command runs a generator file that grabs json data from `server/emulator/data directory`  |
 
 ##### Switching from emulator to Google Cloud datastore instance
 As long as `DATASTORE_EMULATOR_HOST` and `DATASTORE_PROJECT_ID` variables are present in the environment, application is going to connect to emulator, if you want to connect to GCP Datastore instances `unset` both environment variables and make sure `GCLOUD_PROJECT` and `GOOGLE_APPLICATION_CREDENTIALS` are set.
@@ -98,7 +99,7 @@ As long as `DATASTORE_EMULATOR_HOST` and `DATASTORE_PROJECT_ID` variables are pr
 To get more information about how Backend Emulator works run `npm run docs` then click `Backend Emulator` link in Related documents table.
 
 ### 6. Webpack
-The project uses [Webpack](https://webpack.js.org/) to run. This tool was installed in the [4. Install modules](#4_install_modules) step. You can run the Webpack Dev Server if you set `USE_WEBPACK_DEV_SERVER` to `true` . If not set it defaults to `false`.
+The project uses [Webpack](https://webpack.js.org/) to run. This tool was installed in the [4. Install modules](#4-install-modules) step. You can run the Webpack Dev Server if you set `USE_WEBPACK_DEV_SERVER` to `true` . If not set it defaults to `false`.
 
 
 ### 7. Running the project
